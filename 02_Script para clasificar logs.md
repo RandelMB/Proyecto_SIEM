@@ -1,13 +1,9 @@
-
-
-
-# Descripción del Proyecto
+# Descripción 
 
 Script en Python para análisis y clasificación automática de logs de red (MikroTik / syslog).
 
 Mi objetivo es organizar grandes volúmenes de logs en categorías claras para facilitar integración, monitoreo de actividad sospechosa, es una de las soluciones para categorizar logs después de sacarlos de extraerlos con syslog-ng
 
----
 ## Objetivo
 
 - Lee logs en tiempo real (tipo `tail -f`)
@@ -22,14 +18,12 @@ Mi objetivo es organizar grandes volúmenes de logs en categorías claras para f
 - Las reglas de filtrado las separé del script
 - Preparado para correr como servicio (`systemd`)
 
----
 # Script
 ```python
 import time
 import os
 
 # CONFIGURACIÓN  -----------------------------------------------------
-
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 LOG_FILE = "/opt/stacks/syslog-ng/syslog-ng/logs/mikrotik.log"
 RULES_FILE = os.path.join(SCRIPT_DIR, "rules.txt")

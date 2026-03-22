@@ -1,8 +1,7 @@
-
+# Descripción
 En el la sección anterior se trabajo un script para separar logs por lo que es esta ocasión les traigo una forma de notificación con un sistema en Python para monitorear logs de firewall. Analiza IPs, puertos y protocolos, acumula intentos y mantiene historial con persistencia en JSON (evita reprocesar logs).
 
-
-##### Tecnologías utilizadas:
+#### Tecnologías utilizadas:
 - Python (procesamiento, parsing, lógica)
 - Regex (extracción de datos de logs)
 - JSON (persistencia)
