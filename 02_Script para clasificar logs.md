@@ -18,6 +18,17 @@ Mi objetivo es organizar grandes volúmenes de logs en categorías claras para f
 - Las reglas de filtrado las separé del script
 - Preparado para correr como servicio (`systemd`)
 
+### Resultado
+```
+logs/
+├── firewall.log
+├── dns.log
+├── dhcp.log
+├── ipsec.log
+├── snmp.log
+├── auth.log
+└── unknown.log
+```
 # Script
 ```python
 import time
